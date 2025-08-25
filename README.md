@@ -22,8 +22,8 @@ Please download the dataset and place the preprocessed `.npy` files in the `data
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/eeg-motor-imagery-transformer.git
-    cd eeg-motor-imagery-transformer
+    git clone https://github.com/guanshengdu/v59-project-final.git
+    cd v59-project-final
     ```
 
 2.  **Create a virtual environment and install dependencies:**
@@ -33,22 +33,6 @@ Please download the dataset and place the preprocessed `.npy` files in the `data
     pip install -r requirements.txt
     ```
 
-## Usage
-
-### Training the Model
-
-To train the model from scratch, run the `train.py` script:
-```bash
-python src/train.py
-```The script will perform the 80/20 train/validation split, train the model, and save the best-performing weights to the `saved_models/` directory.
-
-### Evaluating the Model
-
-To evaluate the trained model on the official evaluation set, run:
-```bash
-python src/evaluate.py --model_path saved_models/EEGModel.pth
-```
-
 ## Results
 
 The model achieves high training accuracy but shows signs of overfitting, with a final evaluation accuracy of approximately **46-50%**. The primary challenge is generalizing from a small dataset.
@@ -56,9 +40,6 @@ The model achieves high training accuracy but shows signs of overfitting, with a
 **Performance on Evaluation Set (with Early Stopping):**
 
 ![Evaluation Results](assets/results_plot.png)
-
-**Training & Validation Curves:**
-*(Add the plots for loss and accuracy over epochs)*
 
 The model performs well on `left hand` and `right hand` classes but struggles to differentiate `feet` and `tongue` classes, which is a common challenge with this dataset.
 
