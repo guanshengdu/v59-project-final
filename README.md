@@ -3,7 +3,6 @@
 This project implements a hybrid Convolutional-Transformer deep learning model in PyTorch to classify motor imagery tasks from EEG signals. The model is trained and evaluated on the BCI Competition IV Dataset 2a.
 
 ![Model Architecture Diagram](assets/model_architecture.png)
-*(Image from slide 4 of your presentation)*
 
 ## Introduction
 
@@ -57,7 +56,6 @@ The model achieves high training accuracy but shows signs of overfitting, with a
 **Performance on Evaluation Set (with Early Stopping):**
 
 ![Evaluation Results](assets/results_plot.png)
-*(Screenshot of the confusion matrices and reports from slide 8 of your presentation)*
 
 **Training & Validation Curves:**
 *(Add the plots for loss and accuracy over epochs)*
